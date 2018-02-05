@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="static/img/icon.png" />
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+
+
+
+
+	 <link rel="stylesheet" type="text/css" href="static/css/gallery-style.css">
+  <script>
+   $(document).ready(function(){
+
+   $('.parallax').parallax();
+
+	$(document).on('scroll', function (e) {
+
+	if($(document).scrollTop()>$("#header3-5").offset().top)
+    {$('.navbar').css('opacity', 1);
+	$('.navbar').css('background-color', '#ee7230');
+	}
+	else
+	{$('.navbar').css('opacity', 0.5);
+	$('.navbar').css('background-color', '#000000');
+	}
+	});
+
+
+  });
+
+
+  </script>
+    <script>
+        $(document).ready(function () {
+           $("#logo").hover(function () {
+               if($(document).scrollTop()>800){
+            $(this).attr('src',"static/img/nlogo.png");}
+           },function () {
+            $(this).attr('src',"static/img/nlogo2.png");
+               });
+        });
+
+    </script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        <div class="navbar-header">
+           <a class="navbar-brand" href="index.html"><img id="logo" src="static/img/nlogo2.png"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Nav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="Nav">
+            <ul class="nav navbar-nav navbar-right text-center">
+               <li><a class="list" href="index.html#about">ABOUT</a></li>
+				<li><a class="list" href="team.html">TEAM</a></li>
+                <li class="active"><a class="list" href="">GALLERY</a></li>
+                <li><a class="list" href="sponsors.html">SPONSORS</a></li>
+                <li><a class="list" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+            </div>
+
+    </nav>
+
+
+	<img id="bck" src="static/img/backimg.jpeg" width="100%" />
+
+
+	<div class="container-fluid text-center" id="header3-5" >
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="disp">Here are some of our previous years photos.</h1>
+                <div class="l2"></div>
+            </div>
+        </div>
+    </div>
+	</div>
+
+
+
+
+
+
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3" data-toggle="modal" data-target="#myModal">
+				<div href="#car" data-slide-to="0" data-toggle="carousel">
+					<img src="static/img/gallery/img1_min.jpg" />
+
+				</div>
+			</div>
+			<div class="col-sm-3" data-toggle="modal" data-target="#myModal">
+				<div href="#car" data-slide-to="1" data-toggle="carousel">
+					<img src="static/img/gallery/img2_min.jpg" />
+				</div>
+			</div>
+			<div class="col-sm-3" data-toggle="modal" data-target="#myModal">
+				<div href="#car" data-slide-to="2" data-toggle="carousel" >
+					<img src="static/img/gallery/img3_min.jpg" />
+				</div>
+			</div>
+			<div class="col-sm-3" data-toggle="modal" data-target="#myModal">
+				<div href="#car" data-slide-to="3" data-toggle="model">
+					<img src="static/img/gallery/img4_min.jpg" />
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3" data-toggle="modal" data-target="#myModal">
+				<div href="#car" data-slide-to="4" data-toggle="carousel">
+					<img src="static/img/gallery/img6_min.jpg" />
+				</div>
+			</div>
+			<div class="col-sm-3" data-toggle="modal" data-target="#myModal">
+				<div href="#car" data-slide-to="5" data-toggle="carousel">
+					<img src="static/img/gallery/img7_min.jpg" />
+				</div>
+			</div>
+			<div class="col-sm-3" data-toggle="modal" data-target="#myModal">
+				<div href="#car" data-slide-to="6" data-toggle="carousel" >
+					<img src="static/img/gallery/img8_min.jpg" />
+				</div>
+			</div>
+			<div class="col-sm-3" data-toggle="modal" data-target="#myModal">
+				<div href="#car" data-slide-to="7" data-toggle="model">
+					<img src="static/img/gallery/img9_min.jpg" />
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+					<div class="carousel slide" id="car" >
+		<!--Indicators-->
+			<ol class="carousel-indicators">
+				<li data-target="#car" data-slide-to="0" class="active"></li>
+				<li data-target="#car" data-slide-to="1"></li>
+				<li data-target="#car" data-slide-to="2"></li>
+				<li data-target="#car" data-slide-to="3"></li>
+				<li data-target="#car" data-slide-to="4"></li>
+				<li data-target="#car" data-slide-to="5"></li>
+				<li data-target="#car" data-slide-to="6"></li>
+				<li data-target="#car" data-slide-to="7"></li>
+			</ol>
+
+		<!--car-->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="static/img/gallery/img1.jpg" />
+				</div>
+				<div class="item">
+					<img src="static/img/gallery/img2.jpg" />
+				</div>
+				<div class="item">
+					<img src="static/img/gallery/img3.jpg" />
+				</div>
+				<div class="item">
+					<img src="static/img/gallery/img4.jpg" />
+				</div>
+                <div class="item active">
+					<img src="static/img/gallery/img6.jpg" />
+				</div>
+				<div class="item">
+					<img src="static/img/gallery/img7.jpg" />
+				</div>
+				<div class="item">
+					<img src="static/img/gallery/img8.jpg" />
+				</div>
+				<div class="item">
+					<img src="static/img/gallery/img9.jpg" />
+				</div>
+			</div>
+
+			<a class="lef carousel-control" href="#car" role="button" data-slide="prev">
+				<span class="icon-prev rr" aria-hidden="true"></span>
+
+			</a>
+			<a class="righ carousel-control" href="#car" role="button" data-slide="next">
+				<span class="icon-next rr" aria-hidden="true"></span>
+
+			</a>
+			<a class="clos carousel-control" href="#" role="button" data-dismiss="modal">
+                        <span aria-hidden="true" style="padding-left:5px;">×</span>
+
+            </a>
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+	</div>
+    </div>
+
+
+
+	<div class="footer text-center">
+		<p>&copy; Thunderbolt 5.0<p>
+		<span class="glyphicon glyphicon-chevron-left her"></span>--
+		Designed & Maintained by Tauhid Anjum 
+		--<span class="glyphicon glyphicon-chevron-right her"></span>
+	</div>
+	
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+{% load static %}
+body {
+    font-family: stratum;
+	line-height: 1.8;
+}
+
+@font-face {
+    font-family: 'CODE Bold';
+    src: url("fonts/CODE Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: 'CODE Light';
+    src: url("fonts/CODE Light.otf") format("opentype");
+}
+
+
+
+@font-face{src:url(fonts/stratum.woff);font-family:stratum}
+@font-face{src:url(fonts/stratumbold.woff);font-family:stratum-bold}
+
+	.navbar {
+          margin-bottom: 0;
+          background-color: #ee7230;
+          z-index: 9999;border: 0;
+          font-size: 20px !important;
+          letter-spacing: 4px;
+          border-radius: 0;
+		  box-shadow: 5px 0px 40px rgba(0,0,0, 0.2)
+      }
+      .navbar li a,  .navbar-brand {
+    color: #fff !important;
+	font-size:20px;
+	font-weight: bold;
+	transition: all 0.4s ease;
+        }
+	.navbar-brand{
+			position: relative;
+			left:3em;
+			font-size: 30px;
+		}
+
+		@media only screen and (max-width: 800px) {
+			.navbar-brand{
+			position: relative;
+			left:0.5em;
+			font-size: 30px;
+			}
+		}
+		.navbar-brand img {
+            width:60px;
+            position: absolute;
+            top:-20px;
+        }
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: rgba(16, 33, 61, 0.9) !important;
+    background-color: #f5f5ef !important;
+        }
+      .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+        }
+        .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.logo {
+	position:relative;
+
+	height: 100vh;
+	width:100%;
+	background-color: rgba(74,71,78,0.05);
+    font-size:40px;
+	padding-top:200px;
+}
+.fb{
+	margin: auto;
+	position:absolute;
+	left:49%;
+	bottom:0;
+	opacity:0.9;
+	font-size:1.2em;
+	color:rgba(0,0,0,0.8);
+}
+
+
+
+.bolt{
+	transition: all 1s ease;
+	background:#F6F6F6;
+	color:#424242;
+	border: 3px solid #424242;
+	transform: scale(0.9);
+	width: 240px;
+	height: 240px;
+	font-size:170px;
+	z-index:200;
+
+	color: #ffffff;
+	margin:auto;
+	transition: all 1s ease;
+}
+.bolt img{
+	position:relative;
+	top:-33px;
+}
+.light {
+	position:relative;
+	top:-23px;
+}
+.bolt:hover{
+
+	transform: scale(1.1);
+}
+.container-fluid {
+
+	width:100%;
+}
+
+.boltcov{
+	border-radius:150px;
+	position:relative;
+	margin:0 auto;
+	width: 260px;
+	height: 260px;
+	background:#F6F6F6;
+}
+
+.l1{
+	margin:0 auto;
+	width:60%;
+	z-index:-10;
+	background-color:#424242;
+	position:relative;
+	top:120px;
+	height:2.5px;
+}
+.l2{
+	margin:0 auto;
+	width:30%;
+	z-index:2;
+	background-color:#F6F6F6;
+	position:relative;
+	top:0px;
+	height:2.5px;
+}
+
+
+
+.para {
+	font-size:1.5em !important;
+}
+
+.about {
+	font-family:Montserrat;
+	padding:100px 0;
+	color: #ffffff;
+	background: -webkit-linear-gradient(-45deg, #404040, #606060);
+}
+
+
+
+.img-head {
+	font-size:20px;
+	font-family:Montserrat;
+}
+
+.heading{
+	font-weight:bold;
+}
+.pul{
+            animation: pulse 1s ease;
+        }
+ @-webkit-keyframes pulse {
+            0% {
+                -webkit-transform: scale(1);
+            -moz-transform:scale(1);
+            transform: scale(1);
+        opacity: 1;
+            }
+            50% {
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+            transform: scale(0.9);
+        opacity: 0.7;
+            }
+        100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+            transform: scale(1);
+        opacity: 1;
+            }
+        }
+ .sec{
+	background-color: #B0BEC5;
+	padding:20px 0;
+	font-family:Montserrat;
+}
+
+.sec .hed{
+	font-size:40px;
+	padding-top:30px;
+
+}
+
+.footer{
+	margin:auto;
+	height:100px;
+	font-size:1em;
+	line-height: 1;
+	font-family:Montserrat;
+	padding-top:27px;
+	background:#F6F6F6;
+	color:black;
+}
+.her{
+		position:relative;
+		top:2px;
+		animation:bubble 1s infinite ease;
+		color:#3a3a3a;
+		
+}
+
+@keyframes bubble{
+	0% {
+                -webkit-transform: scale(1);
+            transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+        opacity: 0.9;
+    }
+    100% {
+        -webkit-transform: scale(1);
+            transform: scale(1);
+        opacity: 1;
+            }
+	
+}
+
+.thund{
+	padding: 4% 0;
+
+}
+.cd-timeline-img img{
+	animation:rot 3s infinite linear;
+}
+
+@keyframes rot{
+	100%	{
+		transform:rotate(360deg);
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	.fb{
+
+		position: static;
+		margin: auto;
+		padding-bottom: 10px;
+	}
+	.cd-date{
+		position: relative;
+		left:35%;
+	}
+	.para{
+		font-size: 1.2em !important;
+	}
+	.heading{
+		font-size: 2em;
+	}
+
+	}
+

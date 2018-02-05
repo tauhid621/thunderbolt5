@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thunderbolt 5.0</title>   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/icon.png" />
+
+
+	<link rel="stylesheet" href="static/css/hstyle.css"> <!-- Resource style -->
+	<script src="static/javascript/modernizr.js"></script> <!-- Modernizr -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+	
+	<script>
+$(document).ready(function(){
+    $('.bolt').css("border-radius","125px");
+	$(".bolt").on('click', function(event) {
+		$('html,body').animate({scrollTop: $("#thund1").offset().top-100}, 1000);
+		$('html,body').delay(600).animate({scrollTop: $("#thund2").offset().top-100}, 1000);
+		$('html,body').delay(600).animate({scrollTop: $("#thund3").offset().top-100}, 1000);
+		$('html,body').delay(600).animate({scrollTop: $("#thund4").offset().top-100}, 1000);
+		$('html,body').delay(600).animate({scrollTop: $("#about").offset().top}, 1000);
+  });
+  
+  $(".navbar a").on('click', function(event) {
+
+  if (this.hash !== "") {
+
+    event.preventDefault();
+
+    var hash = this.hash;
+
+   $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      window.location.hash = hash;
+      });
+    }
+  });
+  $("#logo").hover(function () {
+            $(this).attr('src',"static/img/nlogo.png");
+           },function () {
+            $(this).attr('src',"static/img/nlogo2.png");
+               });
+  $(".fb").hover(function(){
+        $(this).addClass("pul");
+        }, function(){
+        $(this).removeClass("pul");
+    });
+  $("html, body").bind("scroll mousedown DOMMouseScroll mousewheel keyup", function(){
+    $('html, body').stop();
+        });
+});
+</script>
+</head>
+    
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img id="logo" src="static/img/nlogo2.png"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Nav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>      
+        <div class="collapse navbar-collapse" id="Nav">
+            <ul class="nav navbar-nav navbar-right text-center">
+                <li><a class="list" href="#about">ABOUT</a></li>
+				<li><a class="list" href="team.html">TEAM</a></li>
+                <li><a class="list" href="gallery.html">GALLERY</a></li>
+                <li><a class="list" href="sponsors.html">SPONSORS</a></li>
+                <li><a class="list" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+            </div>
+        
+    </nav>
+    
+        <div class="container-fluid logo text-center">
+            
+        
+            <div class="line l1">
+            </div>
+            
+
+            <div class="boltcov text-center">
+            <div class="bolt">
+                <img src="static/img/nlogo_hover.png" style="width: 200px" alt="cap" />
+            </div>
+            </div>
+                <div class="thu">
+                <strong> THUNDERBOLT 5.0</strong>
+                    </div>
+                 
+			<div class="fb-box">
+                <a href="https://www.facebook.com/TeamThunderboltnitw/" target="_blank"><span class="fb"><i class="fa fa-facebook"></i></span></a>
+            </div>
+
+                
+        </div>
+
+    <div class="sec">
+		<div class="hed text-center">
+			TIMELINE
+			<div class="line l2">
+            </div>
+		</div>
+	<section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block" id="thund1">
+			<div class="cd-timeline-img cd-picture">
+				<img src="static/img/gear.png" alt="Picture">
+			</div>
+
+			<div class="cd-timeline-content ">
+				<h2>Thunderbolt 1.0</h2>
+				<div class="thund text-center">
+				<img src="static/img/gallery/img4.jpg" />
+				</div>
+				<h2>AIR 22</h2>
+				<span class="cd-date">2012-2013</span>
+			</div>
+		</div>
+
+		<div class="cd-timeline-block" id="thund2">
+			<div class="cd-timeline-img cd-movie">
+				<img src="static/img/gear.png" alt="Picture">
+			</div>
+
+			<div class="cd-timeline-content">
+				<h2>Thunderbolt 2.0</h2>
+					<div class="thund text-center">
+				<img src="static/img/gallery/image10.jpeg" />
+				</div>
+				<h2>AIR 12</h2>
+				<span class="cd-date">2013-2014</span>
+			</div>
+		</div>
+
+		<div class="cd-timeline-block" id="thund3">
+			<div class="cd-timeline-img cd-picture">
+				<img src="static/img/gear.png" alt="Picture">
+			</div>
+
+			<div class="cd-timeline-content">
+				<h2>Thunderbolt 3.0</h2>
+					<div class="thund text-center">
+				<img src="static/img/gallery/image11.jpg" />
+				</div>
+				<h2>AIR 32</h2>
+				<span class="cd-date">2014-2015</span>
+			</div>
+		</div>
+
+		<div class="cd-timeline-block" id="thund4">
+			<div class="cd-timeline-img cd-location">
+				<img src="static/img/gear.png" alt="Picture">
+			</div>
+
+			<div class="cd-timeline-content">
+				<h2>Thunderbolt 4.0</h2>
+					<div class="thund text-center">
+				<img src="static/img/gallery/image12.jpg" />
+				</div>
+				<h2>AIR 6</h2>
+				<p class="text-center">AIR 1 in Innovation</p>
+				<div class="cd-date">2015-2016</div>
+			</div>
+		</div>
+
+
+
+
+	</section>
+	</div>
+            
+        
+    <div class="container-fluid about" id="about">
+        <div class="container text-center">
+		<h1 class="text-center heading">About Thunderbolt 5.0</h1><br />
+		<p class="para">
+​​​		Team THUNDERBOLT 5.0 comprises of 10 budding engineers passionate about designing,
+		manufacturing, analysing and marketing of an electric hybrid recumbent trike.</p>
+		
+		<br />
+		
+		<h1 class="text-center heading">About NITW</h1><br />
+		<p class="para">
+National Institute of Technology, Warangal (shortened to NIT WARANGAL or NITW) is a premier federally funded technical institute in India. 
+It is one of the Institutes of National Importance (INI) established by the government of India,
+ awarding bachelors, masters and doctoral degrees in engineering, technology, basic sciences and management.
+		</p>
+		
+		<h1 class="text-center heading">About Event</h1><br />
+		<p class="para">
+			SAE NIS EFFICYCLE is an Intercollegiate design competition for the undergraduate and 
+			graduate engineering students where team of 6-10 students have to design and 
+			fabricate an energy efficient Hybrid human powered three wheeled electric vehicle.
+			<br />
+			The fabricated Efficycle is judged by eminent professionals from the industry on the basis of design,
+			build quality, costing and marketability. The vehicles have to undergo technical Inspection followed by dynamic events- Acceleration, utility, maneuverability 
+			& gradient test. The two hour final endurance race tests the durability of the vehicle.
+		</p>
+		</div>
+    </div>
+	
+	<div class="footer text-center">
+		<p>&copy; Thunderbolt 5.0<p>
+		<span class="glyphicon glyphicon-chevron-left her"></span>--
+		Designed & Maintained by Tauhid Anjum 
+		--<span class="glyphicon glyphicon-chevron-right her"></span>
+	</div>
+    <script src="static/javascript/main.js"></script> <!-- Resource jQuery -->
+</body>
+
+</html>

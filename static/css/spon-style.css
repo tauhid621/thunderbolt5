@@ -1,0 +1,193 @@
+
+
+body {
+    font-family: stratum;
+	line-height: 1.8;
+    background: #F6F6F6;
+    min-height: 100%;
+    
+}
+
+	
+@font-face{src:url(fonts/stratum.woff);font-family:stratum}
+@font-face{src:url(fonts/stratumbold.woff);font-family:stratum-bold}
+
+@font-face {
+    font-family: 'CODE Bold';
+    src: url("fonts/CODE Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: 'CODE Light';
+    src: url("fonts/CODE Light.otf") format("opentype");
+}
+
+.navbar {
+          background-color: #ee7230;
+          z-index: 9999;border: 0;
+          font-size: 20px !important;
+          margin-bottom: 0;
+          letter-spacing: 4px;
+          border-radius: 0;
+		  box-shadow: 5px 0px 40px rgba(0,0,0, 0.2)
+      }
+      .navbar li a,  .navbar-brand {
+    color: #fff !important;
+	font-size:20px;
+	font-weight: bold;
+	transition: all 0.4s ease;
+        }
+		
+		.navbar-brand{
+            position: relative;
+            left:3em;
+            font-size: 30px;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .navbar-brand{
+            position: relative;
+            left:0.5em;
+            font-size: 30px;
+            }
+        }
+
+        .navbar-brand img {
+            width:60px;
+            position: absolute;
+            top:-20px;
+        }
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: rgba(16, 33, 61, 0.9) !important;
+    background-color: #f5f5ef !important;
+        }
+      .navbar-default .navbar-toggle {
+    border-color: transparent;
+    background:transparent;
+    color: #fff !important;
+        }
+        .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+		
+.title{
+padding-top:100px;
+font-family:"Code Bold";
+font-size:4em;
+}
+
+.emp{
+    height:15em;
+}
+
+@media only screen and (max-width: 600px) {
+
+   .title{
+    font-size: 3em;
+   }
+   .emp{
+    height:5em;
+}
+
+}
+
+
+    .spon{
+        border: 2px solid black;
+        font-size:1.5em;
+        padding: 15px;
+        font-family: "Code Bold";
+        color:black;
+        text-decoration: none;
+        transition: all 0.5s ease;
+    }
+
+
+
+.tagline{
+	padding:1% 0;
+	font-family:"Code Bold" ;
+	font-size:1.5em;
+	padding-bottom:50px;
+}
+
+.pul{
+            animation: pulse 1s ease;
+        }
+ @-webkit-keyframes pulse {
+            0% {
+                -webkit-transform: scale(1);
+            -moz-transform:scale(1);
+            transform: scale(1);
+        opacity: 1;
+            }
+            50% {
+        -webkit-transform: scale(0.95);
+        -moz-transform: scale(0.95);
+            transform: scale(0.95);
+        opacity: 0.7;
+            }
+        100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+            transform: scale(1);
+        opacity: 1;
+            }
+        }
+		
+.footer{
+	width:100%;
+    margin:auto;
+    margin-top:110px;
+    height:100px;
+    font-size:1em;
+    line-height: 1;
+    font-family:Montserrat;
+    padding-top:27px;
+    background:#dddddd;
+    color:black;
+
+
+}
+.her{
+		position:relative;
+		top:2px;
+		animation:bubble 1s infinite ease;
+		color:#3a3a3a;
+}
+
+@keyframes bubble{
+	0% {
+                -webkit-transform: scale(1);
+            transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+        opacity: 0.9;
+    }
+    100% {
+        -webkit-transform: scale(1);
+            transform: scale(1);
+        opacity: 1;
+            }
+	
+}
+
+.bod{
+    margin: 50px auto;
+    margin-bottom: 50vh;
+  
+}
+
+.bod img {
+    max-width: 300px;
+    width: 25%;
+    min-width: 100px;
+    margin: 10px 10px;
+    transition: all 0.5s ease;
+}
+
+.bod img:hover{
+    transform: scale(1.1);
+}

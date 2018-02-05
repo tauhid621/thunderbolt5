@@ -1,0 +1,219 @@
+body {
+    font-family: stratum;
+	line-height: 1.8;
+    background: #F6F6F6;
+}
+
+
+@font-face{src:url(fonts/stratum.woff);font-family:stratum}
+@font-face{src:url(fonts/stratumbold.woff);font-family:stratum-bold}
+
+@font-face {
+    font-family: 'CODE Bold';
+    src: url("fonts/CODE Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: 'CODE Light';
+    src: url("fonts/CODE Light.otf") format("opentype");
+}
+
+.navbar {
+
+          margin-bottom: 0;
+          background-color: #ee7230;
+          z-index: 9999;border: 0;
+          font-size: 20px !important;
+          letter-spacing: 4px;
+          border-radius: 0;
+		  box-shadow: 5px 0px 40px rgba(0,0,0, 0.2)
+      }
+      .navbar li a,  .navbar-brand {
+    color: #fff !important;
+	font-size:20px;
+	font-weight: bold;
+	transition: all 0.4s ease;
+        }
+
+		.navbar-brand{
+      position: relative;
+      left:3em;
+      font-size: 30px;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .navbar-brand{
+      position: relative;
+      left:0.5em;
+      font-size: 30px;
+      }
+    }
+
+    .navbar-brand img {
+            width:60px;
+            position: absolute;
+            top:-20px;
+        }
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: rgba(16, 33, 61, 0.9) !important;
+    background-color: #f5f5ef !important;
+        }
+      .navbar-default .navbar-toggle {
+    border-color: transparent;
+  background:transparent;
+    color: #fff !important;
+        }
+        .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+      .bod{
+          font-family: Lato;
+            color:black;
+          font-size: 15px;
+          padding: 55px 45px;
+          margin: 50px 0 0 0;
+
+
+          position: absolute;
+          right:0px;
+      }
+
+.marker{
+	padding:0 10px 0 0;
+	background-color: #f5f5ef !important;
+}
+
+.clist{
+	font-family:Lato;
+	color:black;
+	 background-color: #f5f5ef !important;
+	 margin-left:50px;
+    border:1px solid #acacac;
+	width:400px;
+	height:450px;
+	position:relative;
+	top:150px;
+	font-size:16px;
+	padding :25px 0
+}
+.clist ul li {
+	padding: 2px 0;
+	}
+.clist ul{
+	padding-top:15px;
+}
+pre{
+	padding:20px 0 0 40px;
+	border:none;
+	font-size:16px;
+    color:black;
+}
+.con{
+
+     border: 1px solid black;
+}
+.box{
+    width: 100%;
+    height:600px;
+
+}
+.mark {
+	font-size:17px;
+	padding:0px 8px 0 4px;
+	background-color: #f5f5ef !important;
+}
+
+.footer{
+
+	width:100%;
+	margin:auto;
+	margin-top:110px;
+	height:100px;
+	font-size:1em;
+	line-height: 1;
+	font-family:Montserrat;
+	padding-top:27px;
+	background:#dddddd;
+	color:black;
+}
+.her{
+		position:relative;
+		top:2px;
+		animation:bubble 1s infinite ease;
+		color:#3a3a3a;
+}
+
+@keyframes bubble{
+	0% {
+                -webkit-transform: scale(1);
+            transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+        opacity: 0.9;
+    }
+    100% {
+        -webkit-transform: scale(1);
+            transform: scale(1);
+        opacity: 1;
+            }
+	
+}
+@media only screen and (max-width: 600px) {
+	
+	  
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: 100%; 
+  }
+  .bod{
+          
+          font-size: 15px;
+          padding: 5px 15px;
+          margin: 0px 0 0 0;
+
+
+          position: absolute;
+          right:0px;
+	      }
+	 .box{
+	 	height:600px;
+	 }
+
+
+	 .clist{
+
+	 margin-left:0px; 
+	position:relative;
+	top:100px;
+	font-size:14px;
+	width:100%;
+}
+ul{
+	position: relative;
+	left:-5%;
+}
+pre{
+	padding:20px 0 0 20px;
+	font-size:14px;
+}
+
+
+}
+	
+	input[type=text],
+  input[type=email]{
+  	width:50%;
+  }
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: 100%; 
+  }
